@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.huynh.fragments.TrangChuFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="Danh sách Online"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:background="#fff"
+                android:id="@+id/listOnlineUn"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:paddingTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ListView
+                android:id="@+id/lvTinTuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
