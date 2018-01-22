@@ -3,7 +3,6 @@ package com.example.huynh.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
@@ -13,10 +12,8 @@ import android.widget.ListView;
 
 import com.example.huynh.adapters.OnlineUnAdapter;
 import com.example.huynh.adapters.TinTucAdapter;
-import com.example.huynh.customs.CircleImage;
 import com.example.huynh.models.OnlineUn;
-import com.example.huynh.models.TinTuc;
-import com.example.huynh.mxh.MainActivity;
+import com.example.huynh.models.UserThePost;
 import com.example.huynh.mxh.R;
 
 import java.util.ArrayList;
@@ -31,7 +28,7 @@ public class TrangChuFragment extends Fragment {
     OnlineUnAdapter onlineUnAdapter;
 
     ListView lvTinTuc;
-    ArrayList<TinTuc> danhSachTinTuc;
+    ArrayList<UserThePost> danhSachUserThePost;
     TinTucAdapter tinTucAdapter;
 
     public TrangChuFragment() {
@@ -67,43 +64,43 @@ public class TrangChuFragment extends Fragment {
 
 
 //        Tin Tức
-        danhSachTinTuc = new ArrayList<>();
-        danhSachTinTuc.add(
-                new TinTuc(R.drawable.neko,
+        danhSachUserThePost = new ArrayList<>();
+        danhSachUserThePost.add(
+                new UserThePost(R.drawable.neko,
                         "Neko-chan","20/1/2018",
                         "Thành phố HCM",
                         "BanBe",
                         "Đây là nội dung nè!!!",
                         R.drawable.neko,5,5));
-        danhSachTinTuc.add(
-                new TinTuc(R.drawable.neko,
+        danhSachUserThePost.add(
+                new UserThePost(R.drawable.neko,
                         "Neko-chan","20/1/2018",
                         "Thành phố HCM",
                         "BanBe",
                         "Đây là nội dung nè!!!",
                         R.drawable.neko,5,5));
-        danhSachTinTuc.add(
-                new TinTuc(R.drawable.neko,
+        danhSachUserThePost.add(
+                new UserThePost(R.drawable.neko,
                         "Neko-chan","20/1/2018",
                         "Thành phố HCM",
                         "BanBe",
                         "Đây là nội dung nè!!!",
                         R.drawable.neko,5,5));
-        danhSachTinTuc.add(
-                new TinTuc(R.drawable.neko,
+        danhSachUserThePost.add(
+                new UserThePost(R.drawable.neko,
                         "Neko-chan","20/1/2018",
                         "Thành phố HCM",
                         "BanBe",
                         "Đây là nội dung nè!!!",
                         R.drawable.neko,5,5));
-        danhSachTinTuc.add(
-                new TinTuc(R.drawable.neko,
+        danhSachUserThePost.add(
+                new UserThePost(R.drawable.neko,
                         "Neko-chan","20/1/2018",
                         "Thành phố HCM",
                         "BanBe",
                         "Đây là nội dung nè!!!",
                         R.drawable.neko,5,5));
-        tinTucAdapter = new TinTucAdapter(getContext(),R.layout.item_timtuc,danhSachTinTuc);
+        tinTucAdapter = new TinTucAdapter(getContext(),R.layout.item_user_the_post, danhSachUserThePost);
         lvTinTuc = v.findViewById(R.id.lvTinTuc);
         lvTinTuc.setAdapter(tinTucAdapter);
 

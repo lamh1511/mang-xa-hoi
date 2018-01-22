@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        >
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/imgAvatar"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:padding="11dp"
+            >
+            <TextView
+                android:id="@+id/txtNameFriend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Dương Mịch"
+                android:textSize="20sp"
+
+                />
+            <TextView
+                android:id="@+id/txtBanChung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 bạn chung"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnChapNhan"
+                    android:layout_weight="1"
+                    android:background="@drawable/button"
+                    android:text="Thêm Bạn Bè"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="6dp"
+
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnXoa"
+                    android:layout_weight="1"
+                    android:background="@drawable/button1"
+                    android:text="Xóa"
+                    android:textColor="#646670"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

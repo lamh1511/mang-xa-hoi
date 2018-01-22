@@ -14,23 +14,22 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.huynh.customs.CircleImage;
-import com.example.huynh.models.TinTuc;
+import com.example.huynh.models.UserThePost;
 import com.example.huynh.mxh.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by huynh on 1/20/2018.
  */
 
-public class TinTucAdapter extends ArrayAdapter<TinTuc>
+public class TinTucAdapter extends ArrayAdapter<UserThePost>
 {
     @NonNull Context context;
     @LayoutRes int resource;
-    @NonNull ArrayList<TinTuc> objects;
+    @NonNull ArrayList<UserThePost> objects;
 
-    public TinTucAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull ArrayList<TinTuc> objects) {
+    public TinTucAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull ArrayList<UserThePost> objects) {
         super(context, resource, objects);
         this.context = context;
         this.resource = resource;
@@ -63,6 +62,20 @@ public class TinTucAdapter extends ArrayAdapter<TinTuc>
         txtvNoiDungChu.setText(objects.get(position).getNoiDungChu());
         imgvNoiDungHinh.setImageResource(objects.get(position).getNoiDungHinh());
 
+
+        btnThich.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        btnBinhLuan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
         return row;
     }

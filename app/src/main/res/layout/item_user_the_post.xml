@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--Thong tin người đăng-->
+    <LinearLayout
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.huynh.customs.CircleImage
+            android:id="@+id/avatarNguoiDang"
+            android:src="@drawable/neko1"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtvTenNguoiDang"
+                android:textStyle="bold"
+                android:text="Tên người đăng bài"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtvNgayDang"
+                    android:textSize="12sp"
+                    android:textColor="#ccc"
+                    android:text="Vừa xong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_gravity="center"
+                    android:background="#bab9b9"
+                    android:layout_width="2dp"
+                    android:layout_height="2dp" />
+                <TextView
+                    android:id="@+id/txtvDiaChi"
+                    android:textSize="12sp"
+                    android:textColor="#bab9b9"
+                    android:text="Thành phố Hồ Chí Minh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="2dp"
+                    android:layout_gravity="center"
+                    android:background="#bab9b9"
+                    android:layout_width="2dp"
+                    android:layout_height="2dp" />
+                <ImageView
+                    android:id="@+id/imgvGioiHanXem"
+                    android:src="@drawable/ic_supervisor_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Noi dung dang-->
+    <TextView
+        android:text="Đây là nội dung text mà người đăng tin đăng"
+        android:id="@+id/txtvNoiDungChu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:maxHeight="250dp"
+        android:src="@drawable/neko"
+        android:id="@+id/imgvNoiDungHinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:padding="10dp"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btnThich"
+            android:background="@null"
+            android:src="@drawable/icon_like"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#FF6600"
+            android:layout_weight="1"
+            android:text="Thích"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/btnBinhLuan"
+            android:background="@null"
+            android:src="@drawable/icon_binhluan"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#FF6600"
+            android:layout_weight="1"
+            android:text="Bình luận"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/lvComment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </ListView>
+
+</LinearLayout>

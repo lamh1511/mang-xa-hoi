@@ -12,18 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.example.huynh.Manhinhchao.ManHinhChaoActivity">
+
+        </activity>
+        <activity
+            android:name="com.example.huynh.XuLyDangNhap.ManHinhDangNhapActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.example.huynh.XuLyDangNhap.ManHinhDangKyActivity" />
+        <activity android:name="com.example.huynh.XuLyDangNhap.ManHinhQuenMatKhauActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.example.huynh.ManHinhDangNhap.ManHinhDangNhapActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name="com.example.huynh.ManHinhDangKy.ManHinhDangKyActivity" />
-        <activity android:name="com.example.huynh.ManHinhQuenMatKhau.ManHinhQuenMatKhauActivity" />
-        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
