@@ -2,12 +2,154 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayoutMenu"
     tools:context="com.example.huynh.fragments.MenuFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="#f1f1f1">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#fdfdfe">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="8dp"
+                    android:innerRadius="0dp"
+                    android:shape="ring"
+                    android:thicknessRatio="1.0"
+                    app:cardCornerRadius="30dp">
+
+                    <com.example.huynh.customs.CircleImage
+                        android:id="@+id/imgOnlineUser"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/buitiendung" />
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bùi Tiến Dũng"
+                        android:textColor="#000"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Xem trang cá nhân của bạn"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="LỐI TẮT"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtvChinhSua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chỉnh sửa"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvDanhSachLoiTat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fdfdfe"></ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KHÁM PHÁ"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvDanhSachKhamPha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fdfdfe"></ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="25dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CÀI ĐẶT"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fdfdfe"
+                android:id="@+id/lvDanhSachCaiDat"></ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="18dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="#fdfdfe"
+                    android:gravity="center"
+                    android:text="Đăng xuất"
+                    android:textAllCaps="false"
+                    android:textColor="#ff0004" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 </FrameLayout>
